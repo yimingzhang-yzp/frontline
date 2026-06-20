@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRONTLINE — フォワードデプロイド人材の配備プラットフォーム</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="pages.css?v=5">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+    <nav class="nav-links">
+      <a href="index.html#what">FDEとは</a>
+      <a href="index.html#who">対象人材</a>
+      <a href="index.html#deploy">配備の流れ</a>
+      <a href="roles.html">案件</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="for-companies.html" class="btn btn-primary">企業の方</a>
+      <a href="register.html" class="btn btn-primary">無料会員登録</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Forward Deployed Talent</span>
+      <h1>顧客の現場で、<br><span class="amber">課題発見から開発</span><br>まで届ける人へ</h1>
+      <p class="lede">FRONTLINEは、顧客と並走して課題解決を形にするフォワードデプロイド人材と、本気で変革を望む企業をつなぐプラットフォームです。AIの進歩により、いまや実装まで踏み込めるのはエンジニアだけではありません。</p>
+      <div class="hero-actions">
+        <a href="roles.html" class="btn btn-primary">案件を見る →</a>
+        <a href="register.html" class="btn btn-ghost">無料会員登録</a>
+      </div>
+    </div>
+
+    <!-- deployment console -->
+    <div class="console reveal">
+      <div class="console-bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="ttl">deploy_match.log</div>
+      </div>
+      <div class="console-body">
+        <div class="row"><span class="k">talent</span><span class="v">@m.saito</span></div>
+        <div class="row"><span class="k">type</span><span class="v">ITコンサル + AIエージェント活用</span></div>
+        <div class="row"><span class="k">mode</span><span class="am">on-site forward deploy</span></div>
+        <div class="console-divider"></div>
+        <div class="row"><span class="k">scanning clients…</span></div>
+        <div class="row"><span class="ok">✓ matched</span> <span class="v">SeriesB FinTech</span></div>
+        <span class="match-chip"><span style="width:6px;height:6px;border-radius:50%;background:var(--live);display:inline-block"></span> 適合度 94%</span>
+        <div class="bar-track"><div class="bar-fill" id="bar"></div></div>
+        <div class="console-divider"></div>
+        <div class="row"><span class="ok am">→ ready to deploy</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track" id="ticker">
+    <span class="ticker-item"><span class="dot"></span><b>SeriesB FinTech</b> <span class="tag">#決済基盤</span> 配備募集中</span>
+    <span class="ticker-item"><span class="dot"></span><b>製造業DX</b> <span class="tag">#IoTデータ基盤</span> 配備募集中</span>
+    <span class="ticker-item"><span class="dot"></span><b>医療スタートアップ</b> <span class="tag">#LLM導入</span> 配備募集中</span>
+    <span class="ticker-item"><span class="dot"></span><b>物流プラットフォーム</b> <span class="tag">#最適化エンジン</span> 配備募集中</span>
+    <span class="ticker-item"><span class="dot"></span><b>大手小売</b> <span class="tag">#在庫AI</span> 配備募集中</span>
+    <span class="ticker-item"><span class="dot"></span><b>SaaS企業</b> <span class="tag">#オンボード自動化</span> 配備募集中</span>
+  </div>
+</div>
+
+<!-- WHAT IS FDE -->
+<section id="what" class="def">
+  <div class="wrap def-grid">
+    <div class="def-text reveal">
+      <span class="eyebrow">Definition</span>
+      <h3 style="margin-top:16px">受託でも、SESでもない<br>顧客と「一緒に作る」役割</h3>
+      <p>フォワードデプロイド人材（FDE）は、顧客の現場に深く入り込み、課題のヒアリングから設計・実装・定着までを並走する役割です。<b>仕様書を待つのではなく、現場で何が必要かを自ら掴み、動くものに変える。</b></p>
+      <p>かつて実装はエンジニアの専有領域でした。しかしAIの進歩により、<b>IT知識を持つコンサルタントやドメインエキスパートも、自らの手で動くものを作れます。</b>FRONTLINEは職種ではなく「現場で価値を届けられるか」で人と案件を結びます。</p>
+    </div>
+    <div class="def-card reveal">
+      <div class="label">対比 — 従来の人材配置 vs FDE</div>
+      <div class="compare">
+        <div class="col-l">
+          <h4>従来の配置</h4>
+          <ul>
+            <li>仕様書ベースで受け身</li>
+            <li>提案や戦略づくりで終わる</li>
+            <li>実装は別チームに引き継ぎ</li>
+            <li>職種の壁で役割が分断</li>
+          </ul>
+        </div>
+        <div class="col-r">
+          <h4>FDE</h4>
+          <ul>
+            <li>現場で課題を自ら定義</li>
+            <li>AIを使い自ら形にする</li>
+            <li>導入・定着まで一気通貫</li>
+            <li>職種を越えて成果に責任</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO CAN BE FDE -->
+<section id="who">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Who Deploys</span>
+      <h2>もう、職種は問わない</h2>
+      <p>AIエージェントを共通の道具として、それぞれの強みを現場の成果に変える。FDEになれる人は、もっと広い。</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card reveal">
+        <div class="who-ic">&lt;/&gt;</div>
+        <h3>エンジニア</h3>
+        <p>設計・実装の中核を担いつつ、AIで開発速度を上げ、顧客対応や要件定義まで踏み込む。</p>
+        <div class="who-tags"><span>実装力</span><span>アーキテクチャ</span></div>
+      </div>
+      <div class="who-card reveal feature">
+        <div class="who-ic">▤</div>
+        <h3>SIer</h3>
+        <p>大規模システム開発と顧客折衝の経験に、AIの実装力が加わる。受託の枠を越え、現場で動くものを届ける。</p>
+        <div class="who-tags"><span>業務システム</span><span>+ AI実装</span></div>
+      </div>
+      <div class="who-card reveal feature">
+        <div class="who-ic">◇</div>
+        <h3>ITコンサルタント</h3>
+        <p>業務理解と課題設計の強みに、AIによる実装力が加わった。提案で止まらず、自ら動くものを届ける。</p>
+        <div class="who-tags"><span>課題設計</span><span>+ AI実装</span></div>
+      </div>
+      <div class="who-card reveal feature">
+        <div class="who-ic">◯</div>
+        <h3>ドメインエキスパート</h3>
+        <p>業界・業務の深い知見を持つ人が、AIで自分の手で解決策を試作。現場の言葉のまま形にできる。</p>
+        <div class="who-tags"><span>業界知見</span><span>+ AI試作</span></div>
+      </div>
+    </div>
+    <p class="who-foot reveal">共通するのは、<b>AIエージェントを使いこなし、課題から実装までを自分ごととして進められること。</b></p>
+  </div>
+</section>
+<section id="deploy" class="steps">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Deployment Flow</span>
+      <h2>登録から配備まで、4つのフェーズ</h2>
+      <p>適合する現場へ送り出すまでを、プラットフォームが設計します。番号は実際の進行順です。</p>
+    </div>
+    <div class="step-grid reveal">
+      <div class="step">
+        <div class="ph"><span class="num">01</span> PROFILE</div>
+        <span class="marker"></span>
+        <h3>強み登録</h3>
+        <p>技術・業務知見・AI活用スタイルなど、現場で発揮できる強みを登録。肩書きではなく「解いてきた課題」で評価します。</p>
+      </div>
+      <div class="step">
+        <div class="ph"><span class="num">02</span> MATCH</div>
+        <span class="marker"></span>
+        <h3>適合スキャン</h3>
+        <p>課題の性質・チーム文化・技術要件から適合度を算出。平均11日で最初の配備候補が提示されます。</p>
+      </div>
+      <div class="step">
+        <div class="ph"><span class="num">03</span> SYNC</div>
+        <span class="marker"></span>
+        <h3>現場すり合わせ</h3>
+        <p>顧客チームと直接対話し、期待値と成果指標を合意。配備前に「何を解くか」を明確にします。</p>
+      </div>
+      <div class="step">
+        <div class="ph"><span class="num">04</span> DEPLOY</div>
+        <span class="marker"></span>
+        <h3>配備・伴走</h3>
+        <p>現場に入り、設計から実装・定着まで並走。進捗はプラットフォーム上で双方が可視化できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLES -->
+<section id="roles" class="roles">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Open Deployments</span>
+      <h2>いま現場が、人を待っている</h2>
+      <p>公開中の配備案件の一部です。すべて課題定義から関わるポジションです。</p>
+    </div>
+    <div class="role-grid">
+      <div class="role-card reveal">
+        <div class="role-top">
+          <span class="role-co">SeriesB / FinTech</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>決済プロダクトの立ち上げをリードするFDE</h3>
+        <div class="role-tags"><span>決済ドメイン</span><span>AIエージェント開発</span><span>要件定義</span><span>コンサル歓迎</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥160–220万<small>/月</small></span>
+          <span class="role-loc">東京・週3出社</span>
+        </div>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-top">
+          <span class="role-co">製造業 / 大手</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>工場現場の業務をAIで効率化するFDE</h3>
+        <div class="role-tags"><span>製造業務知見</span><span>業務改善</span><span>AIワークフロー</span><span>非エンジニア可</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥150–200万<small>/月</small></span>
+          <span class="role-loc">愛知・フルリモート可</span>
+        </div>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-top">
+          <span class="role-co">スタートアップ / 医療</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>臨床現場へのAIアシスタント導入リード</h3>
+        <div class="role-tags"><span>医療ドメイン</span><span>LLM活用</span><span>業務設計</span><span>コンサル歓迎</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥170–240万<small>/月</small></span>
+          <span class="role-loc">東京・ハイブリッド</span>
+        </div>
+      </div>
+      <div class="role-card reveal">
+        <div class="role-top">
+          <span class="role-co">物流 / プラットフォーム</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>配送最適化エンジンの設計・実装</h3>
+        <div class="role-tags"><span>実装中核</span><span>最適化</span><span>AI支援開発</span><span>エンジニア向け</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥160–210万<small>/月</small></span>
+          <span class="role-loc">大阪・週2出社</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:38px" class="reveal">
+      <a href="roles.html" class="btn btn-ghost" style="padding:13px 28px">すべての案件を見る（12件）→</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOR ENGINEERS / COMPANIES -->
+<section id="for">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin:0 auto 52px;text-align:center;max-width:620px">
+      <span class="eyebrow" style="justify-content:center">Get Started</span>
+      <h2>どちらの立場でも、最前線へ</h2>
+    </div>
+    <div class="duo">
+      <div class="duo-card eng reveal">
+        <span class="badge">For Talent</span>
+        <h3>現場で価値を出したい人へ</h3>
+        <ul>
+          <li><span class="ic">→</span>エンジニア・SIer・コンサル・ドメインエキスパート、職種は問わない</li>
+          <li><span class="ic">→</span>肩書きではなく「解いた課題」で評価される</li>
+          <li><span class="ic">→</span>AI活用前提だから、実装経験がなくても挑戦できる</li>
+          <li><span class="ic">→</span>登録・相談はすべて無料</li>
+        </ul>
+        <a href="register.html" class="btn btn-primary">無料会員登録</a>
+      </div>
+      <div class="duo-card reveal">
+        <span class="badge">For Companies</span>
+        <h3>並走できる人材を探す企業へ</h3>
+        <ul>
+          <li><span class="ic">→</span>仕様を渡すのではなく、課題ごと任せられる人材</li>
+          <li><span class="ic">→</span>エンジニアもAI活用コンサルも、課題に最適な人を提案</li>
+          <li><span class="ic">→</span>平均11日でファースト候補を提示</li>
+          <li><span class="ic">→</span>配備後の伴走状況もダッシュボードで可視化</li>
+        </ul>
+        <a href="for-companies.html" class="btn btn-ghost">配備を相談する</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;max-width:560px;margin:0 auto 40px">
+      <span class="eyebrow" style="justify-content:center">FAQ</span>
+      <h2>よくある質問</h2>
+      <p>FRONTLINEについて、よくいただく質問をまとめました。</p>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q">FDE（フォワードデプロイド人材）とは何ですか？<span class="tog">+</span></button>
+        <div class="faq-a"><div class="faq-a-in">顧客の現場に入り込み、課題のヒアリングから設計・実装・定着までを並走する役割です。仕様を待つのではなく、現場で必要なものを自ら掴み、動くプロダクトに変えます。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">エンジニア以外でも登録できますか？<span class="tog">+</span></button>
+        <div class="faq-a"><div class="faq-a-in">はい。SIer・ITコンサルタント・ドメインエキスパートなど、AIエージェントを使いこなし課題から実装まで進められる方であれば、職種を問わず歓迎します。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">登録や利用に費用はかかりますか？<span class="tog">+</span></button>
+        <div class="faq-a"><div class="faq-a-in">人材の方は、登録・相談・適合スキャン・面談まですべて無料です。配備が成立したあとも、人材側に費用はかかりません。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">どのくらいで案件が決まりますか？<span class="tog">+</span></button>
+        <div class="faq-a"><div class="faq-a-in">平均11日で最初の配備候補をご提示します。すり合わせを経て、最短2週間で配備開始が可能です（課題の性質により前後します）。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">リモートでも参加できますか？<span class="tog">+</span></button>
+        <div class="faq-a"><div class="faq-a-in">案件によります。フルリモート可の案件から、週2〜3日の出社を求める案件まで。希望の働き方を登録時に伺い、条件に合う案件をご提案します。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">企業はどんな相談ができますか？<span class="tog">+</span></button>
+        <div class="faq-a"><div class="faq-a-in">要件が固まっていない段階でも構いません。解きたい課題をお聞かせいただければ、課題整理から並走し、最適な人材をご提案します。詳しくは「企業の方」ページをご覧ください。</div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:34px" class="reveal">
+      <a href="for-companies.html" class="btn btn-ghost" style="padding:13px 28px">企業の方はこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-final">
+  <div class="grid-bg"></div>
+  <div class="wrap inner reveal">
+    <h2>提案で終わらない<br><span class="amber">現場で、動かす</span></h2>
+    <p>あなたのスキルが本当に必要とされる最前線が、ここにあります。</p>
+    <div class="hero-actions">
+      <a href="roles.html" class="btn btn-primary" style="padding:14px 28px">案件を見る →</a>
+      <a href="register.html" class="btn btn-ghost" style="padding:14px 28px">無料会員登録</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+        <p>フォワードデプロイド人材の配備プラットフォーム。AIを武器に、最前線で価値を届ける人と現場をつなぎます。</p>
+      </div>
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="index.html#what">FDEとは</a>
+        <a href="index.html#who">対象人材</a>
+        <a href="index.html#deploy">配備の流れ</a>
+        <a href="roles.html">案件</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h5>For You</h5>
+        <a href="register.html">無料会員登録</a>
+        <a href="for-companies.html">企業の方</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://www.yz-partners.co.jp/" target="_blank" rel="noopener">運営会社</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 株式会社YZ PARTNERS</span>
+      <span>STATUS: <span style="color:var(--live)">● ALL SYSTEMS DEPLOYED</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>

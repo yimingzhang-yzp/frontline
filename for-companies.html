@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企業の方 — FRONTLINE</title>
+<meta name="description" content="仕様を渡すのではなく課題ごと任せられるフォワードデプロイド人材を。FRONTLINEは平均11日でファースト候補を提示し、配備後の伴走まで可視化します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="pages.css?v=5">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+    <nav class="nav-links">
+      <a href="index.html#what">FDEとは</a>
+      <a href="index.html#who">対象人材</a>
+      <a href="index.html#deploy">配備の流れ</a>
+      <a href="roles.html">案件</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="for-companies.html" class="btn btn-primary">企業の方</a>
+      <a href="register.html" class="btn btn-primary">無料会員登録</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="breadcrumb">
+      <a href="index.html">HOME</a><span class="sep">/</span>
+      <span class="cur">企業の方へ</span>
+    </div>
+    <span class="eyebrow">For Companies</span>
+    <h1>仕様を渡すのではなく、<br><span class="amber">課題ごと任せる</span></h1>
+    <p class="sub">受託でもSESでもない。あなたの現場に入り込み、課題定義から実装・定着まで並走する人材を配備します。課題に最適な人を、職種を越えて。</p>
+  </div>
+</section>
+
+<!-- APPEAL + CONSULT FORM -->
+<section class="page-section" id="consult">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;max-width:640px;margin:0 auto 40px">
+      <span class="eyebrow" style="justify-content:center">Get Started</span>
+      <h2>まず、課題を聞かせてください</h2>
+      <p>要件が固まっていなくても大丈夫。相談は無料、最短2週間で配備できます。まずは下のフォームからお気軽に。</p>
+      <div class="appeal-row">
+        <span class="appeal-badge">相談無料</span>
+        <span class="appeal-badge">最短2週間で配備</span>
+        <span class="appeal-badge">要件が未確定でもOK</span>
+      </div>
+    </div>
+    <div class="form-shell">
+    <form class="form-card" data-form="company" data-sheet="company" novalidate>
+      <div style="margin-bottom:26px">
+        <h2 style="font-family:var(--disp);font-size:22px;font-weight:600;color:var(--white);letter-spacing:-.01em">配備を相談する</h2>
+        <p style="color:var(--fog);font-size:14.5px;margin-top:10px">下記をお送りいただければ、担当より2営業日以内にご連絡します。</p>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="fl" for="company">会社名 <span class="req">*</span></label>
+          <input class="input" type="text" id="company" name="company" placeholder="株式会社サンプル" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+        <div class="form-group">
+          <label class="fl" for="cname">ご担当者名 <span class="req">*</span></label>
+          <input class="input" type="text" id="cname" name="cname" placeholder="山田 太郎" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="fl" for="cemail">メールアドレス <span class="req">*</span></label>
+          <input class="input" type="email" id="cemail" name="cemail" placeholder="you@company.co.jp" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+        <div class="form-group">
+          <label class="fl" for="phone">電話番号 <span class="opt">（任意）</span></label>
+          <input class="input" type="tel" id="phone" name="phone" placeholder="03-0000-0000">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl">どんな人材をお探しですか？ <span class="opt">（複数選択可）</span></label>
+        <div class="pillset">
+          <input type="checkbox" name="need" id="n1" value="eng"><label for="n1">実装中核エンジニア</label>
+          <input type="checkbox" name="need" id="n5" value="sier"><label for="n5">SIer出身</label>
+          <input type="checkbox" name="need" id="n2" value="aiconsul"><label for="n2">AI活用コンサル</label>
+          <input type="checkbox" name="need" id="n3" value="domain"><label for="n3">ドメインエキスパート</label>
+          <input type="checkbox" name="need" id="n4" value="undecided"><label for="n4">相談したい</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="fl" for="budget">想定予算（月額）</label>
+          <select class="select" id="budget" name="budget">
+            <option value="">選択してください</option>
+            <option>〜100万円</option>
+            <option>100–150万円</option>
+            <option>150–200万円</option>
+            <option>200万円〜</option>
+            <option>未定 / 相談したい</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="fl" for="timing">開始希望時期</label>
+          <select class="select" id="timing" name="timing">
+            <option value="">選択してください</option>
+            <option>できるだけ早く</option>
+            <option>1ヶ月以内</option>
+            <option>3ヶ月以内</option>
+            <option>情報収集中</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl" for="challenge">解きたい課題 <span class="req">*</span></label>
+        <textarea class="textarea" id="challenge" name="challenge" placeholder="現場でどんな課題を抱えているか、どんな状態を目指したいか。要件が固まっていなくても構いません。" required></textarea>
+        <span class="err-msg">必須項目です</span>
+        <span class="field-hint">// 曖昧なままでOK。課題の整理から伴走します</span>
+      </div>
+
+      <div class="form-group">
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span><a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意します。<span class="req">*</span></span>
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">相談を送信する →</button>
+        <div class="form-feedback"></div>
+      </div>
+    </form>
+
+    <aside class="form-rail reveal">
+      <div class="rail-card">
+        <h4>ご相談後の流れ</h4>
+        <ul class="rail-steps">
+          <li><span class="sn">1</span><span><b>2営業日以内に連絡</b>担当よりオンラインで課題を伺います。</span></li>
+          <li><span class="sn">2</span><span><b>適合候補の提示</b>平均11日でファースト候補をご提案。</span></li>
+          <li><span class="sn">3</span><span><b>面談・すり合わせ</b>候補と直接お話しいただけます。</span></li>
+          <li><span class="sn">4</span><span><b>配備開始</b>合意後、最短2週間で配備します。</span></li>
+        </ul>
+      </div>
+      <div class="rail-card">
+        <p class="rail-quote">
+          「要件が固まっていない段階で相談したのに、課題整理から並走してくれました。提案ではなく、動くものが2週間で出てきたのが衝撃でした。」
+          <span class="who">— SeriesB FinTech / プロダクト責任者</span>
+        </p>
+      </div>
+      <div class="rail-card" style="text-align:center">
+        <p style="color:var(--fog);font-size:13.5px;line-height:1.6">お急ぎの場合は<br><a href="contact.html" style="color:var(--signal)">お問い合わせ窓口</a>からも承ります。</p>
+      </div>
+    </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="page-section alt" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;max-width:560px;margin:0 auto 44px">
+      <span class="eyebrow" style="justify-content:center">Pricing</span>
+      <h2>料金プラン</h2>
+      <p>課題の規模に応じて3つのプランから。隠れた費用はありません。</p>
+    </div>
+    <div class="price-grid">
+
+      <div class="price-card reveal">
+        <div class="plan">Spot</div>
+        <div class="price">成果報酬<small></small></div>
+        <div class="price-sub">1名の配備から、まず試したい企業へ。</div>
+        <ul>
+          <li><span class="ic">✓</span>初期費用・登録費用 0円</li>
+          <li><span class="ic">✓</span>配備が決定して初めて費用が発生</li>
+          <li><span class="ic">✓</span>適合スキャンによる候補提示</li>
+          <li><span class="ic">✓</span>配備後30日の継続保証</li>
+          <li class="off"><span class="ic">—</span>専任カスタマーサクセス</li>
+        </ul>
+        <a href="#consult" class="btn btn-ghost">相談する</a>
+      </div>
+
+      <div class="price-card feature reveal">
+        <div class="plan">Deploy</div>
+        <div class="price">月額制<small></small></div>
+        <div class="price-sub">継続的に複数の課題を任せたい企業へ。</div>
+        <ul>
+          <li><span class="ic">✓</span>Spotのすべての機能</li>
+          <li><span class="ic">✓</span>複数名の同時配備に対応</li>
+          <li><span class="ic">✓</span>伴走ダッシュボードの提供</li>
+          <li><span class="ic">✓</span>専任カスタマーサクセス</li>
+          <li><span class="ic">✓</span>配備後90日の継続保証</li>
+        </ul>
+        <a href="#consult" class="btn btn-primary">相談する</a>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="plan">Partner</div>
+        <div class="price">個別見積<small></small></div>
+        <div class="price-sub">全社的にAI実装体制を作りたい企業へ。</div>
+        <ul>
+          <li><span class="ic">✓</span>Deployのすべての機能</li>
+          <li><span class="ic">✓</span>チーム単位での配備設計</li>
+          <li><span class="ic">✓</span>社内人材の育成・内製化支援</li>
+          <li><span class="ic">✓</span>四半期ごとの体制レビュー</li>
+          <li><span class="ic">✓</span>優先マッチング</li>
+        </ul>
+        <a href="#consult" class="btn btn-ghost">問い合わせる</a>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--fog);font-family:var(--mono);font-size:12px;margin-top:24px" class="reveal">
+      ※ 報酬は配備人材のスキル・稼働により変動します。具体的な金額は相談時にご提示します。
+    </p>
+    <div style="text-align:center;margin-top:18px" class="reveal">
+      <a href="pricing.html" class="btn btn-ghost" style="padding:12px 24px">料金の詳細・よくある質問 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+        <p>フォワードデプロイド人材の配備プラットフォーム。AIを武器に、最前線で価値を届ける人と現場をつなぎます。</p>
+      </div>
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="index.html#what">FDEとは</a>
+        <a href="index.html#who">対象人材</a>
+        <a href="index.html#deploy">配備の流れ</a>
+        <a href="roles.html">案件</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h5>For You</h5>
+        <a href="register.html">無料会員登録</a>
+        <a href="for-companies.html">企業の方</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://www.yz-partners.co.jp/" target="_blank" rel="noopener">運営会社</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 株式会社YZ PARTNERS</span>
+      <span>STATUS: <span style="color:var(--live)">● ALL SYSTEMS DEPLOYED</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="pages.js?v=7"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公開中の案件 — FRONTLINE</title>
+<meta name="description" content="FRONTLINEで公開中のフォワードデプロイド案件一覧。課題定義から実装・定着まで関わるポジションを、ドメイン・働き方で絞り込めます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="pages.css?v=5">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+    <nav class="nav-links">
+      <a href="index.html#what">FDEとは</a>
+      <a href="index.html#who">対象人材</a>
+      <a href="index.html#deploy">配備の流れ</a>
+      <a href="roles.html">案件</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="for-companies.html" class="btn btn-primary">企業の方</a>
+      <a href="register.html" class="btn btn-primary">無料会員登録</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="breadcrumb">
+      <a href="index.html">HOME</a><span class="sep">/</span>
+      <span class="cur">公開中の案件</span>
+    </div>
+    <span class="eyebrow">Open Deployments</span>
+    <h1>いま現場が、<span class="amber">人を待っている</span></h1>
+    <p class="sub">公開中の配備案件です。すべて課題定義から関わるポジション。ドメインや働き方で絞り込めます。</p>
+  </div>
+</section>
+
+<!-- LISTING -->
+<section class="page-section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <span class="filter-label">絞り込み</span>
+      <button class="chip active" data-filter="all">すべて</button>
+      <button class="chip" data-filter="eng">エンジニア向け</button>
+      <button class="chip" data-filter="consul">コンサル歓迎</button>
+      <button class="chip" data-filter="domain">非エンジニア可</button>
+      <button class="chip" data-filter="remote">リモート可</button>
+      <span class="filter-count" id="filter-count"><b>12</b> 件を表示</span>
+    </div>
+
+    <div class="roles-list" id="roles-list">
+
+      <a href="role-detail.html" class="role-card linkable reveal" data-cat="consul eng">
+        <div class="role-top">
+          <span class="role-co">SeriesB / FinTech</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>決済プロダクトの立ち上げをリードするFDE</h3>
+        <p class="role-desc">新規決済基盤の要件定義から、AIエージェントを活用した実装・運用設計までを顧客チームと並走。</p>
+        <div class="role-tags"><span>決済ドメイン</span><span>AIエージェント開発</span><span>要件定義</span><span>コンサル歓迎</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥160–220万<small>/月</small></span>
+          <span class="role-loc">東京・週3出社</span>
+        </div>
+      </a>
+
+      <a href="role-2.html" class="role-card linkable reveal" data-cat="domain consul remote">
+        <div class="role-top">
+          <span class="role-co">製造業 / 大手</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>工場現場の業務をAIで効率化するFDE</h3>
+        <p class="role-desc">現場ヒアリングから業務フロー再設計、AIワークフローの試作・定着まで。製造業務知見を重視。</p>
+        <div class="role-tags"><span>製造業務知見</span><span>業務改善</span><span>AIワークフロー</span><span>非エンジニア可</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥150–200万<small>/月</small></span>
+          <span class="role-loc">愛知・フルリモート可</span>
+        </div>
+      </a>
+
+      <a href="role-3.html" class="role-card linkable reveal" data-cat="domain consul">
+        <div class="role-top">
+          <span class="role-co">スタートアップ / 医療</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>臨床現場へのAIアシスタント導入リード</h3>
+        <p class="role-desc">医療従事者の業務に寄り添い、LLMアシスタントの導入設計と現場定着を主導するポジション。</p>
+        <div class="role-tags"><span>医療ドメイン</span><span>LLM活用</span><span>業務設計</span><span>コンサル歓迎</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥170–240万<small>/月</small></span>
+          <span class="role-loc">東京・ハイブリッド</span>
+        </div>
+      </a>
+
+      <a href="role-4.html" class="role-card linkable reveal" data-cat="eng remote">
+        <div class="role-top">
+          <span class="role-co">物流 / プラットフォーム</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>配送最適化エンジンの設計・実装</h3>
+        <p class="role-desc">配送ルート最適化のアルゴリズム設計から実装まで。AI支援開発で開発速度を引き上げる中核ポジション。</p>
+        <div class="role-tags"><span>実装中核</span><span>最適化</span><span>AI支援開発</span><span>エンジニア向け</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥160–210万<small>/月</small></span>
+          <span class="role-loc">大阪・週2出社</span>
+        </div>
+      </a>
+
+      <a href="role-5.html" class="role-card linkable reveal" data-cat="consul domain remote">
+        <div class="role-top">
+          <span class="role-co">SaaS / 成長期</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>オンボーディング自動化を設計するFDE</h3>
+        <p class="role-desc">カスタマーサクセスの業務を分解し、AIエージェントによるオンボード自動化を企画から実装まで。</p>
+        <div class="role-tags"><span>CS業務知見</span><span>業務自動化</span><span>AIエージェント</span><span>コンサル歓迎</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥140–190万<small>/月</small></span>
+          <span class="role-loc">フルリモート</span>
+        </div>
+      </a>
+
+      <a href="role-6.html" class="role-card linkable reveal" data-cat="eng">
+        <div class="role-top">
+          <span class="role-co">大手小売 / DX推進</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>需要予測・在庫AIの導入エンジニア</h3>
+        <p class="role-desc">店舗・EC横断の在庫最適化モデルを、データ基盤の整備から本番運用まで一気通貫で構築。</p>
+        <div class="role-tags"><span>データ基盤</span><span>需要予測</span><span>MLOps</span><span>エンジニア向け</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥170–230万<small>/月</small></span>
+          <span class="role-loc">東京・週3出社</span>
+        </div>
+      </a>
+
+      <a href="role-7.html" class="role-card linkable reveal" data-cat="consul domain remote">
+        <div class="role-top">
+          <span class="role-co">法律事務所 / リーガルテック</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>契約レビュー業務のAI化を主導するFDE</h3>
+        <p class="role-desc">契約審査フローを理解し、文書解析AIの導入と業務再設計をリード。法務・契約知見を活かせる。</p>
+        <div class="role-tags"><span>法務知見</span><span>文書解析AI</span><span>業務設計</span><span>非エンジニア可</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥150–210万<small>/月</small></span>
+          <span class="role-loc">東京・ハイブリッド</span>
+        </div>
+      </a>
+
+      <a href="role-8.html" class="role-card linkable reveal" data-cat="eng remote">
+        <div class="role-top">
+          <span class="role-co">HRテック / SeriesA</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>採用業務エージェントの開発リード</h3>
+        <p class="role-desc">スカウト・スクリーニングを自動化するAIエージェントを、プロダクトに組み込む形で設計・実装。</p>
+        <div class="role-tags"><span>LLMアプリ開発</span><span>エージェント設計</span><span>API実装</span><span>エンジニア向け</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥160–215万<small>/月</small></span>
+          <span class="role-loc">フルリモート</span>
+        </div>
+      </a>
+
+      <a href="role-9.html" class="role-card linkable reveal" data-cat="domain consul">
+        <div class="role-top">
+          <span class="role-co">不動産 / 大手</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>物件提案業務をAIで支援するFDE</h3>
+        <p class="role-desc">営業現場の提案プロセスを分解し、顧客要望に合わせた物件提案AIの試作と現場展開を担当。</p>
+        <div class="role-tags"><span>不動産業務</span><span>提案自動化</span><span>AI活用</span><span>非エンジニア可</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥140–185万<small>/月</small></span>
+          <span class="role-loc">東京・週4出社</span>
+        </div>
+      </a>
+
+      <a href="role-10.html" class="role-card linkable reveal" data-cat="eng consul remote">
+        <div class="role-top">
+          <span class="role-co">エネルギー / インフラ</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>設備保全データの分析基盤を作るFDE</h3>
+        <p class="role-desc">センサーデータを活用した予知保全の仕組みを、データ収集設計から分析・可視化まで構築。</p>
+        <div class="role-tags"><span>IoTデータ</span><span>予知保全</span><span>データ分析</span><span>コンサル歓迎</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥165–220万<small>/月</small></span>
+          <span class="role-loc">東京・ハイブリッド</span>
+        </div>
+      </a>
+
+      <a href="role-11.html" class="role-card linkable reveal" data-cat="domain consul remote">
+        <div class="role-top">
+          <span class="role-co">教育 / EdTech</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>学習コンテンツ生成のワークフロー設計</h3>
+        <p class="role-desc">教材制作の現場に入り、生成AIを使ったコンテンツ制作フローを設計・標準化するポジション。</p>
+        <div class="role-tags"><span>教育ドメイン</span><span>生成AI活用</span><span>業務標準化</span><span>非エンジニア可</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥135–180万<small>/月</small></span>
+          <span class="role-loc">フルリモート</span>
+        </div>
+      </a>
+
+      <a href="role-12.html" class="role-card linkable reveal" data-cat="eng">
+        <div class="role-top">
+          <span class="role-co">公共 / 自治体DX</span>
+          <span class="role-status"><span class="d"></span>募集中</span>
+        </div>
+        <h3>窓口業務の自動応答システム構築</h3>
+        <p class="role-desc">住民向け問い合わせ対応をRAGベースのAIで支援。要件整理からセキュアな実装まで担当。</p>
+        <div class="role-tags"><span>RAG実装</span><span>セキュリティ</span><span>公共システム</span><span>エンジニア向け</span></div>
+        <div class="role-foot">
+          <span class="role-rate">¥155–205万<small>/月</small></span>
+          <span class="role-loc">東京・週2出社</span>
+        </div>
+      </a>
+
+      <div class="empty-state" id="empty-state" style="display:none">
+        該当する案件が見つかりませんでした。条件を変えてお試しください。
+      </div>
+    </div>
+    <div class="pager" id="pager"></div>
+
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <p style="color:var(--fog);font-family:var(--mono);font-size:13px;margin-bottom:18px">
+        条件に合う案件が見つからない場合も、登録時にご希望を伺い個別にご提案します。
+      </p>
+      <a href="register.html" class="btn btn-primary" style="padding:13px 28px">無料会員登録して提案を受ける →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <div class="wrap">
+    <h2>気になる現場は、<span class="amber">まず相談から</span></h2>
+    <p>登録は無料。あなたの強みに合う案件を、担当が個別に絞り込んでご提案します。</p>
+    <div class="hero-actions">
+      <a href="register.html" class="btn btn-primary" style="padding:14px 28px">無料会員登録</a>
+      <a href="for-companies.html" class="btn btn-ghost" style="padding:14px 28px">企業の方はこちら</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+        <p>フォワードデプロイド人材の配備プラットフォーム。AIを武器に、最前線で価値を届ける人と現場をつなぎます。</p>
+      </div>
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="index.html#what">FDEとは</a>
+        <a href="index.html#who">対象人材</a>
+        <a href="index.html#deploy">配備の流れ</a>
+        <a href="roles.html">案件</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h5>For You</h5>
+        <a href="register.html">無料会員登録</a>
+        <a href="for-companies.html">企業の方</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://www.yz-partners.co.jp/" target="_blank" rel="noopener">運営会社</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 株式会社YZ PARTNERS</span>
+      <span>STATUS: <span style="color:var(--live)">● ALL SYSTEMS DEPLOYED</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="pages.js?v=7"></script>
+</body>
+</html>

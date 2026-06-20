@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料会員登録 — FRONTLINE</title>
+<meta name="description" content="FRONTLINEの無料会員登録。エンジニア・コンサル・ドメインエキスパート、職種を問わず登録無料。強みを登録すると適合する配備案件をご提案します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="pages.css?v=5">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+    <nav class="nav-links">
+      <a href="index.html#what">FDEとは</a>
+      <a href="index.html#who">対象人材</a>
+      <a href="index.html#deploy">配備の流れ</a>
+      <a href="roles.html">案件</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="for-companies.html" class="btn btn-primary">企業の方</a>
+      <a href="register.html" class="btn btn-primary">無料会員登録</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="breadcrumb">
+      <a href="index.html">HOME</a><span class="sep">/</span>
+      <span class="cur">無料会員登録</span>
+    </div>
+    <span class="eyebrow">For Talent</span>
+    <h1>あなたの強みを、<span class="amber">最前線へ</span></h1>
+    <p class="sub">登録は無料。肩書きではなく「解いてきた課題」で評価します。AI活用が前提だから、実装経験がなくても挑戦できます。</p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="page-section">
+  <div class="wrap form-shell">
+
+    <!-- FORM CARD -->
+    <form class="form-card" data-form="talent" data-sheet="talent" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="fl" for="name">お名前 <span class="req">*</span></label>
+          <input class="input" type="text" id="name" name="name" placeholder="山田 太郎" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+        <div class="form-group">
+          <label class="fl" for="email">メールアドレス <span class="req">*</span></label>
+          <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl">現在の職種 <span class="req">*</span></label>
+        <div class="pillset">
+          <input type="radio" name="role" id="r-eng" value="engineer"><label for="r-eng">エンジニア</label>
+          <input type="radio" name="role" id="r-sier" value="sier"><label for="r-sier">SIer</label>
+          <input type="radio" name="role" id="r-con" value="consultant"><label for="r-con">ITコンサルタント</label>
+          <input type="radio" name="role" id="r-dom" value="domain"><label for="r-dom">ドメインエキスパート</label>
+          <input type="radio" name="role" id="r-oth" value="other"><label for="r-oth">その他</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl">強みのある領域 <span class="opt">（複数選択可）</span></label>
+        <div class="pillset">
+          <input type="checkbox" name="skill" id="s1" value="impl"><label for="s1">設計・実装</label>
+          <input type="checkbox" name="skill" id="s2" value="req"><label for="s2">要件定義</label>
+          <input type="checkbox" name="skill" id="s3" value="ai"><label for="s3">AIエージェント活用</label>
+          <input type="checkbox" name="skill" id="s4" value="data"><label for="s4">データ分析</label>
+          <input type="checkbox" name="skill" id="s5" value="biz"><label for="s5">業務改善</label>
+          <input type="checkbox" name="skill" id="s6" value="pm"><label for="s6">プロジェクト推進</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl" for="domain">得意なドメイン・業界 <span class="opt">（任意）</span></label>
+        <input class="input" type="text" id="domain" name="domain" placeholder="例）決済・FinTech、製造、医療 など">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="fl" for="work">希望する働き方</label>
+          <select class="select" id="work" name="work">
+            <option value="">選択してください</option>
+            <option>フルリモート希望</option>
+            <option>ハイブリッド可</option>
+            <option>出社可（週2–3）</option>
+            <option>こだわらない</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="fl" for="start">参画可能時期</label>
+          <select class="select" id="start" name="start">
+            <option value="">選択してください</option>
+            <option>すぐに可能</option>
+            <option>1ヶ月以内</option>
+            <option>3ヶ月以内</option>
+            <option>情報収集中</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl" for="exp">これまで解いてきた課題 <span class="opt">（任意）</span></label>
+        <textarea class="textarea" id="exp" name="exp" placeholder="どんな現場で、どんな課題を、どう解決したか。AI活用も書いていただけると提案の精度が上がります。"></textarea>
+        <span class="field-hint">// 肩書きより、具体的な「解いた課題」を重視します</span>
+      </div>
+
+      <div class="form-group">
+        <label class="fl" for="portfolio">ポートフォリオ / GitHub / LinkedIn <span class="opt">（任意）</span></label>
+        <input class="input" type="text" id="portfolio" name="portfolio" placeholder="https://">
+      </div>
+
+      <div class="form-group">
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span><a href="privacy.html" target="_blank">プライバシーポリシー</a>および<a href="terms.html" target="_blank">利用規約</a>に同意します。<span class="req">*</span></span>
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">登録する（無料）→</button>
+        <div class="form-feedback"></div>
+      </div>
+    </form>
+
+    <!-- SIDE RAIL -->
+    <aside class="form-rail reveal">
+      <div class="rail-card">
+        <h4>登録後の流れ</h4>
+        <ul class="rail-steps">
+          <li><span class="sn">1</span><span><b>強みの確認</b>担当が登録内容を確認し、必要に応じてヒアリングします。</span></li>
+          <li><span class="sn">2</span><span><b>適合スキャン</b>課題の性質・文化・要件から適合度を算出します。</span></li>
+          <li><span class="sn">3</span><span><b>候補のご提案</b>平均11日で最初の配備候補をご提案します。</span></li>
+          <li><span class="sn">4</span><span><b>現場すり合わせ</b>顧客チームと直接対話し、期待値を合意します。</span></li>
+        </ul>
+      </div>
+      <div class="rail-card">
+        <p class="rail-quote">
+          「提案で終わる仕事に限界を感じていました。FRONTLINEでは、自分が定義した課題を自分の手で形にできる。コンサル出身でも、AIで実装まで踏み込めています。」
+          <span class="who">— ITコンサル出身 / 配備3ヶ月</span>
+        </p>
+      </div>
+      <div class="rail-card" style="text-align:center">
+        <p style="color:var(--fog);font-size:13.5px;line-height:1.6">登録も相談も<b style="color:var(--chalk)">すべて無料</b>。<br>まずは情報収集だけでも歓迎です。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+        <p>フォワードデプロイド人材の配備プラットフォーム。AIを武器に、最前線で価値を届ける人と現場をつなぎます。</p>
+      </div>
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="index.html#what">FDEとは</a>
+        <a href="index.html#who">対象人材</a>
+        <a href="index.html#deploy">配備の流れ</a>
+        <a href="roles.html">案件</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h5>For You</h5>
+        <a href="register.html">無料会員登録</a>
+        <a href="for-companies.html">企業の方</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://www.yz-partners.co.jp/" target="_blank" rel="noopener">運営会社</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 株式会社YZ PARTNERS</span>
+      <span>STATUS: <span style="color:var(--live)">● ALL SYSTEMS DEPLOYED</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="pages.js?v=7"></script>
+</body>
+</html>

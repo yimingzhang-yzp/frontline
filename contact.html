@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ — FRONTLINE</title>
+<meta name="description" content="FRONTLINEへのお問い合わせ。無料会員登録・配備のご相談・採用・取材など、お気軽にご連絡ください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="pages.css?v=5">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+    <nav class="nav-links">
+      <a href="index.html#what">FDEとは</a>
+      <a href="index.html#who">対象人材</a>
+      <a href="index.html#deploy">配備の流れ</a>
+      <a href="roles.html">案件</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="for-companies.html" class="btn btn-primary">企業の方</a>
+      <a href="register.html" class="btn btn-primary">無料会員登録</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEAD -->
+<section class="page-head">
+  <div class="grid-bg"></div>
+  <div class="wrap inner">
+    <div class="breadcrumb">
+      <a href="index.html">HOME</a><span class="sep">/</span>
+      <span class="cur">お問い合わせ</span>
+    </div>
+    <span class="eyebrow">Contact</span>
+    <h1>まずは、<span class="amber">気軽にひとこと</span></h1>
+    <p class="sub">無料会員登録・配備のご相談・採用・取材まで、どんな内容でも構いません。担当より2営業日以内にご返信します。</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="page-section">
+  <div class="wrap contact-grid">
+
+    <!-- FORM -->
+    <form class="form-card" data-form="contact" data-sheet="contact" novalidate>
+      <div class="form-group">
+        <label class="fl">お問い合わせの種類 <span class="req">*</span></label>
+        <div class="pillset">
+          <input type="radio" name="topic" id="t1" value="talent"><label for="t1">無料会員登録について</label>
+          <input type="radio" name="topic" id="t2" value="company"><label for="t2">配備の相談</label>
+          <input type="radio" name="topic" id="t3" value="career"><label for="t3">採用について</label>
+          <input type="radio" name="topic" id="t4" value="press"><label for="t4">取材・その他</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="fl" for="name">お名前 <span class="req">*</span></label>
+          <input class="input" type="text" id="name" name="name" placeholder="山田 太郎" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+        <div class="form-group">
+          <label class="fl" for="email">メールアドレス <span class="req">*</span></label>
+          <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required>
+          <span class="err-msg">必須項目です</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="fl" for="company">会社名・組織名 <span class="opt">（任意）</span></label>
+        <input class="input" type="text" id="company" name="company" placeholder="株式会社○○">
+      </div>
+
+      <div class="form-group">
+        <label class="fl" for="message">お問い合わせ内容 <span class="req">*</span></label>
+        <textarea class="textarea" id="message" name="message" placeholder="ご相談・ご質問の内容をお書きください。" required></textarea>
+        <span class="err-msg">必須項目です</span>
+      </div>
+
+      <div class="form-group">
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span><a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意します。<span class="req">*</span></span>
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">送信する →</button>
+        <div class="form-feedback"></div>
+      </div>
+    </form>
+
+    <!-- CHANNELS -->
+    <aside class="contact-channels reveal">
+      <div class="channel">
+        <div class="cl">For Talent</div>
+        <h4>無料会員登録の方</h4>
+        <p>専用フォームからの登録がスムーズです。<br><a href="register.html">無料会員登録ページへ →</a></p>
+      </div>
+      <div class="channel">
+        <div class="cl">For Companies</div>
+        <h4>配備をご相談の方</h4>
+        <p>課題ヒアリング用のフォームをご用意しています。<br><a href="for-companies.html">配備の相談ページへ →</a></p>
+      </div>
+      <div class="channel">
+        <div class="cl">Response</div>
+        <h4>ご返信について</h4>
+        <p>2営業日以内に担当よりご連絡します。<br>お急ぎの場合はその旨をご記載ください。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="glyph"></span>FRONTLINE</a>
+        <p>フォワードデプロイド人材の配備プラットフォーム。AIを武器に、最前線で価値を届ける人と現場をつなぎます。</p>
+      </div>
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="index.html#what">FDEとは</a>
+        <a href="index.html#who">対象人材</a>
+        <a href="index.html#deploy">配備の流れ</a>
+        <a href="roles.html">案件</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="foot-col">
+        <h5>For You</h5>
+        <a href="register.html">無料会員登録</a>
+        <a href="for-companies.html">企業の方</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://www.yz-partners.co.jp/" target="_blank" rel="noopener">運営会社</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 株式会社YZ PARTNERS</span>
+      <span>STATUS: <span style="color:var(--live)">● ALL SYSTEMS DEPLOYED</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="pages.js?v=7"></script>
+</body>
+</html>
