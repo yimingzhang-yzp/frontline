@@ -182,6 +182,20 @@ function serializeForm(form){
   return data;
 }
 
+/* ---------- Google Ads コンバージョン計測（申し込み） ---------- */
+function gtag_report_conversion(url){
+  var callback = function(){ if(typeof(url) !== 'undefined'){ window.location = url; } };
+  if(typeof gtag === 'function'){
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18240298925/oPFUCLu6osAcEK2_0_lD',
+      'event_callback': callback
+    });
+  } else {
+    callback();
+  }
+  return false;
+}
+
 /* ---------- forms: validation + submit ---------- */
 (function(){
   document.querySelectorAll('form[data-form]').forEach(form=>{
@@ -242,6 +256,7 @@ function serializeForm(form){
       if(submitBtn){ submitBtn.disabled=true; submitBtn.dataset.label=submitBtn.textContent; submitBtn.textContent='送信中…'; }
 
       const finalize = (sent)=>{
+        gtag_report_conversion(); // 申し込みコンバージョン（送信成功時に1回発火）
         if(feedback){
           feedback.className='form-feedback show';
           feedback.style.background='';feedback.style.borderColor='';feedback.style.color='';
